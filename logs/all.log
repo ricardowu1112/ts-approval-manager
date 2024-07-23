@@ -142,3 +142,15 @@
 [35m[39m
 2024-07-23 15:02:20:220 [35mhttp[39m: [35mGET /api-docs/favicon-32x32.png 304 - - 2.364 ms {}[39m
 [35m[39m
+2024-07-23 15:27:25:2725 [35mhttp[39m: [35mPOST /api/submit-content 200 31 - 3.483 ms {}[39m
+[35m[39m
+2024-07-23 15:27:26:2726 [35mhttp[39m: [35mPOST /api/submit-content 200 31 - 0.454 ms {}[39m
+[35m[39m
+2024-07-23 15:48:37:4837 [35mhttp[39m: [35mPOST /api/submit-content 400 44 - 2.178 ms {"userId":"4325232","content":"fdsgfdbsjgbsjh","about":"dwaf"}[39m
+[35m[39m
+2024-07-23 15:48:47:4847 [35mhttp[39m: [35mPOST /api/submit-content 400 44 - 1.108 ms {"userId":"4325232","content":"fdsgfdbsjgbsjh","about":"dwaf"}[39m
+[35m[39m
+2024-07-23 15:49:48:4948 [35mhttp[39m: [35mPOST /api/submit-content 400 44 - 2.467 ms {"userId":"4325232","content":"fdsgfdbsjgbsjh","about":"dwaf"}[39m
+[35m[39m
+2024-07-23 15:50:12:5012 [35mhttp[39m: [35mPOST /api/submit-content 200 31 - 2.145 ms {"userId":"4325232","content":"fdsgfdbsjgbsjh","about":"dwaf"}[39m
+[35m[39m

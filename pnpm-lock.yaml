@@ -29,6 +29,9 @@ importers:
       morgan:
         specifier: ^1.10.0
         version: 1.10.0
+      openapi:
+        specifier: link:@types/@zodios/openapi
+        version: link:@types/@zodios/openapi
       swagger-ui-express:
         specifier: ^5.0.1
         version: 5.0.1(express@4.19.2)
