@@ -1,0 +1,583 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "",
+  "basePath": "",
+  "tags": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "schemes": [],
+  "securityDefinitions": {},
+  "paths": {
+    "/ping": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/submit-content": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "type": "string",
+                  "example": "4325232"
+                },
+                "content": {
+                  "type": "string",
+                  "example": "fdsgfdbsjgbsjh"
+                },
+                "about": {
+                  "type": "string",
+                  "example": "dwaf"
+                }
+              },
+              "required": [
+                "userId",
+                "content"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/api/pg": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Return the detail of table \"page\"",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "example": "object"
+                },
+                "properties": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "integer"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "number",
+                          "example": 1
+                        }
+                      }
+                    },
+                    "path": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "home"
+                        }
+                      }
+                    },
+                    "hash": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "b29b5d2ce62e55412776ab98f05631e0aa96597b"
+                        }
+                      }
+                    },
+                    "title": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "Untitled Page"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": ""
+                        }
+                      }
+                    },
+                    "isPrivate": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "boolean"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "boolean",
+                          "example": false
+                        }
+                      }
+                    },
+                    "isPublished": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "boolean"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "boolean",
+                          "example": true
+                        }
+                      }
+                    },
+                    "privateNS": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "nullable": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {}
+                      }
+                    },
+                    "publishStartDate": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "format": {
+                          "type": "string",
+                          "example": "date-time"
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "2024-07-22T09:16:42.186Z"
+                        }
+                      }
+                    },
+                    "publishEndDate": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "format": {
+                          "type": "string",
+                          "example": "date-time"
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "2024-07-22T09:16:42.186Z"
+                        }
+                      }
+                    },
+                    "tags": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "array"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "example": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "content": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "# Header\nYour content here"
+                        }
+                      }
+                    },
+                    "render": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "<h1 class=\"toc-header\" id=\"header\"><a href=\"#header\" class=\"toc-anchor\">¶</a> Header</h1>\n<p>Your content here</p>\n"
+                        }
+                      }
+                    },
+                    "toc": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "Header"
+                        }
+                      }
+                    },
+                    "contentType": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "markdown"
+                        }
+                      }
+                    },
+                    "createdAt": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "format": {
+                          "type": "string",
+                          "example": "date-time"
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "2024-07-22T09:16:42.186Z"
+                        }
+                      }
+                    },
+                    "updatedAt": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "format": {
+                          "type": "string",
+                          "example": "date-time"
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "2024-07-22T09:16:42.186Z"
+                        }
+                      }
+                    },
+                    "editor": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "markdown"
+                        }
+                      }
+                    },
+                    "locale": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "en"
+                        }
+                      }
+                    },
+                    "scriptCss": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "nullable": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": ""
+                        }
+                      }
+                    },
+                    "scriptJs": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "nullable": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": ""
+                        }
+                      }
+                    },
+                    "authorId": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "integer"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "number",
+                          "example": 1
+                        }
+                      }
+                    },
+                    "authorName": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "Author Name"
+                        }
+                      }
+                    },
+                    "authorEmail": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "author@example.com"
+                        }
+                      }
+                    },
+                    "creatorId": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "integer"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "number",
+                          "example": 1
+                        }
+                      }
+                    },
+                    "creatorName": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "Creator Name"
+                        }
+                      }
+                    },
+                    "creatorEmail": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "example": true
+                        },
+                        "example": {
+                          "type": "string",
+                          "example": "creator@example.com"
+                        }
+                      }
+                    }
+                  }
+                },
+                "NotRequired": {
+                  "type": "array",
+                  "example": [
+                    "privateNS",
+                    "render",
+                    "toc",
+                    "scriptCss",
+                    "scriptJs"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  }
+}
