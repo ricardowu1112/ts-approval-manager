@@ -21,17 +21,12 @@ export const submitContent = (req: Request, res: Response): Response => {
             }
     } */
 
-  //   const { userId, content } = req.body;
-
-  //   if (!userId || !content) {
-  //     return res.status(400).json({ error: "User ID and content are required" });
-  //   }
-
   const validateBody = UserSchema.safeParse(req.body);
   if (!validateBody.success) {
     console.log(validateBody.error.message);
     return res.status(400).json({ error: "User ID and content are required" });
   }
+
   const { userId, content } = validateBody.data;
 
   // Simulate a successful submission
